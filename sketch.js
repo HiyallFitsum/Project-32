@@ -77,7 +77,7 @@ function draw() {
   background(50);  
   Engine.update(engine);
 
-  text("SCORE: "+score,650,40);
+  text("SCORE:"+ score,650,40);
 
   stand1.display();
   stand2.display();
@@ -96,6 +96,7 @@ function draw() {
   block5.display();
   block5.score();
   block6.display();
+  //console.log(score);
   block7.display();
   block8.display();
  // block9.display();
