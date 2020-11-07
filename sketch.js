@@ -30,7 +30,7 @@ function setup() {
   block8 = new Block(490, 285, 30, 40);
   //block9 = new Block(395, 285, 30, 40);
   
-  fill("red");
+  
   block10 = new Block(310, 245, 30, 40);
   block11 = new Block(340, 245, 30, 40);
   block12 = new Block(370, 245, 30, 40);
@@ -39,17 +39,16 @@ function setup() {
   block15 = new Block(460, 245, 30, 40);
  // block16 = new Block(385, 255, 30, 40);
 
-  fill("green");
+
   block17 = new Block(340, 205, 30, 40);
   block18 = new Block(370, 205, 30, 40);
   block19 = new Block(400, 205, 30, 40);
   block20 = new Block(430, 205, 30, 40);
  // block21 = new Block(355, 235, 30, 40);
 
-  fill("blue");
+
   block22 = new Block(390, 165, 30, 40);
 
-  fill("red");
   block23 = new Block(380, 530, 30, 40);
   block24 = new Block(410, 530, 30, 40);
   block25 = new Block(440, 530, 30, 40);
@@ -57,24 +56,24 @@ function setup() {
   block27 = new Block(500, 530, 30, 40);
   block28 = new Block(530, 530, 30, 40);
 
-  fill("blue");
+ 
   block29 = new Block(410, 490, 30, 40);
   block30 = new Block(440, 490, 30, 40);
   block31 = new Block(470, 490, 30, 40);
   block32 = new Block(500, 490, 30, 40);
 
-  fill("green");
+
   block33 = new Block(460, 450, 30, 40);
 
   ground = new Ground(width/2,height-20,width,10);
 
-  fill("gray");
+ 
   slingShot = new SlingShot(object.body, {x:100,y:200})
 
 }
 
 function draw() {
-  background(50);  
+  background("beige");  
   Engine.update(engine);
 
   text("SCORE:"+ score,650,40);
@@ -85,6 +84,7 @@ function draw() {
 
   object.display();
 
+  fill("yellow");
   block1.display();
   block1.score();
   block2.display();
@@ -96,42 +96,75 @@ function draw() {
   block5.display();
   block5.score();
   block6.display();
+  block6.score();
   //console.log(score);
   block7.display();
+  block7.score();
   block8.display();
+  block8.score();
  // block9.display();
+
+ fill("green");
   block10.display();
+  block10.score();
   block11.display();
+  block11.score();
   block12.display();
+  block12.score();
   block13.display();
+  block13.score();
   block14.display();
+  block14.score();
   block15.display();
+  block15.score();
   //block16.display();
+
+  fill("skyblue");
   block17.display();
+  block17.score();
   block18.display();
+  block18.score();
   block19.display();
+  block19.score();
   block20.display();
+  block20.score();
   //block21.display();
+
+  fill("red");
   block22.display();
+  block22.score();
 
+  fill("blue");
   block23.display();
+  block23.score();
   block24.display();
+  block24.score();
   block25.display();
+  block25.score();
   block26.display();
+  block26.score();
   block27.display();
+  block27.score();
   block28.display();
-  //block16.display();
+  block28.score();
+  
+  fill("green");
   block29.display();
+  block29.score();
   block30.display();
+  block30.score();
   block31.display();
+  block31.score();
   block32.display();
-  //block21.display();
-  block33.display();
+  block32.score();
 
+  fill("yellow");
+  block33.display();
+  block33.score();
   
   
   
-  block6.score();
+  /*block6.score();
   block7.score();
   block8.score();
  // block9.display();
@@ -162,7 +195,7 @@ function draw() {
   block32.score();
   //block21.display();
   block33.score();
-
+*/
 
   ground.display();
 
